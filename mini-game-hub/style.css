@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* Ensures full viewport coverage */
+  width: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Prevents gaps on scroll */
+  height: 50vh; /* Changed from 90vh to 100vh */
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  color:  #d7a62f;
+  background-color: #fff; /* If you don't want this white bg, remove it */
+  padding: 15px 240px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: fit-content;
+  margin: 45px auto; /* Centers horizontally */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px; /* Prevents content from touching edges */
+}
+
+.card {
+  width: 200px;
+  height: 250px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#exit-btn {
+  background-color: #5c41f1;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  position: absolute;
+  top: 440px;
+  right: 80px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#exit-btn:hover {
+  background-color: #769ff7 ;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 12px;
+}

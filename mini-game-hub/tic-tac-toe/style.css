@@ -1,0 +1,109 @@
+html, body {
+    height: 100%; /* Ensures full viewport coverage */
+    width: 100%;
+  }
+  
+body {
+    font-family: "Arial", sans-serif;
+    background-image: url('images/bg.jpg'); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section {
+    text-align: center;
+}
+
+.cell {
+    font-family: "Poppins", cursive;
+    width: 84px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.1s, border-color 0.3s;
+    border: 2px solid #d7a62f;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 40px;
+}
+
+.game--title {
+    font-size: 40px;
+    color: #db9b06; /* Gold color for the text */
+    text-shadow: 
+
+        0 0 1px #d7a62f,   /* Larger glow with gold color */
+        0 0 6px rgba(0, 0, 0, 0.4); /* Slight black shadow for depth */
+    margin-top: 0.1px;
+    margin-bottom: 10px;
+    font-weight: bold; /* Optional: makes the text bold for more impact */
+}
+
+
+.game--container {
+    margin-bottom: 10px;
+    margin-top: 0.5px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 264px;
+    height: 264px;
+    background-color: white;
+    color:red;
+}
+
+.game--status {
+    font-size: 25px;
+    color: white;
+    margin: 5px auto;
+}
+
+.game--restart {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #d7a62f, #c49527);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 23px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 6px;
+    box-shadow: 
+      0 4px 6px rgba(0, 0, 0, 0.1),
+      inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+  }
+
+/* Hover effect */
+.game--restart:hover {
+    background-color:#d7a62f ; /* Change background color when hovered */
+    color:whitesmoke; /* Change text color to white when hovered */
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+
+.cell.x {
+    color: rgb(245, 49, 49); /* X will be red */
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red; /* Glowing red effect */
+}
+
+.cell.o {
+    color: rgb(72, 72, 241); /* O will be blue */
+    text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px blue; /* Glowing blue effect */
+}
+
+
+
